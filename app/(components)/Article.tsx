@@ -28,3 +28,4 @@ const Article = ({blog}:{blog:any}) => {
   )
 }
 
+export default Article
