@@ -5,7 +5,7 @@ import { FormDialog } from './FormDialog';
 
 
 const ContactButton = () => {
-    
+    const [open, setOpen] = useState(false);
 
    
 }
