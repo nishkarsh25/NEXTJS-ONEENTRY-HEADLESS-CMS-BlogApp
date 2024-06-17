@@ -39,5 +39,54 @@ export function FormDialog({ open, setOpen }: { open: boolean, setOpen: any }) {
         setOpen(false);
     }
 
-    
+    return (
+        <Dialog open={open}>
+            <DialogContent className="sm:max-w-[425px]" onInteractOutside={() => setOpen(false)}>
+                <DialogHeader>
+                    <DialogTitle>Contact Us</DialogTitle>
+                    <DialogDescription>
+                        Raise your query...
+                    </DialogDescription>
+                </DialogHeader>
+                <form action={submitHandler} className="grid gap-4 py-4">
+                    <div className="grid grid-cols-4 items-center gap-4">
+                        <Label htmlFor="name" className="text-right">
+                            Name
+                        </Label>
+                        <Input
+                            id="name"
+                            name="name"
+                            className="col-span-3"
+                            placeholder="Patel"
+                        />
+                    </div>
+                    <div className="grid grid-cols-4 items-center gap-4">
+                        <Label htmlFor="username" className="text-right">
+                            Email
+                        </Label>
+                        <Input
+                            id="username"
+                            name="email"
+                            className="col-span-3"
+                            placeholder="patel@gmail.com"
+                        />
+                    </div>
+                    <div className="grid grid-cols-4 items-center gap-4">
+                        <Label htmlFor="username" className="text-right">
+                            Number
+                        </Label>
+                        <Input
+                            id="username"
+                            name="number"
+                            className="col-span-3"
+                            placeholder="9090909090"
+                        />
+                    </div>
+                    <DialogFooter>
+                        <Button type="submit">Submit</Button>
+                    </DialogFooter>
+                </form>
+            </DialogContent>
+        </Dialog>
+    )
 }
