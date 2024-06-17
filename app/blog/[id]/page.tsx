@@ -9,7 +9,9 @@ const SingleArticle = async ({params}:any) => {
     const blogId = params.id;
     const value = await Products.getProductById(blogId, 'en_US');
  
-    
+    const title = value?.attributeValues?.blogtitle?.value?.header;
+    const thumbnail = value?.attributeValues?.blogthumbnail?.value?.downloadLink;
+    const blogContent =  value?.attributeValues?.blogcontent?.value?.htmlValue;
 
     
 }
