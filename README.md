@@ -19,7 +19,7 @@ Welcome to the **Blog App**, a Next.js TypeScript application powered by App Rou
 
 ## Live Demo
 
-You can try out the live demo of the app [here](https://nextjs-shadcndarkmode.onrender.com).
+You can try out the live demo of the app [here](https://nextjs-oneentry-headless-cms-blogapp.onrender.com/).
 
 ## Folder Structure
 
