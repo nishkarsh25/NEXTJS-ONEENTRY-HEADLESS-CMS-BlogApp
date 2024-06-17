@@ -8,7 +8,7 @@ import { defineOneEntry } from 'oneentry';
 const Articles = async () => {
   const { Products } = defineOneEntry(process.env.API_URL!, {token:process.env.API_TOKEN, langCode:"en_US"});
 
-  
+  const blogs = await Products.getProductsByPageId(2)
   
 
   
