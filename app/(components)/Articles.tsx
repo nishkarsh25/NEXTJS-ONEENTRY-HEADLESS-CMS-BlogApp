@@ -11,6 +11,10 @@ const Articles = async () => {
   const blogs = await Products.getProductsByPageId(2)
   
 
-  
+  return (
+    <div className='flex flex-col gap-4 mx-auto max-w-6xl my-10'> 
+        
+    </div>
+  )
 }
 
