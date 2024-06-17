@@ -23,3 +23,4 @@ const Articles = async () => {
   )
 }
 
+export default Articles
