@@ -20,10 +20,10 @@ export async function POST(req:NextRequest) {
             formData:data
         })
 
-        
+        return NextResponse.json({message:"Success", value});
         
     } catch (error:any) {
-        
+        return NextResponse.json({error});
     }
 
 }
