@@ -39,7 +39,9 @@ const Footer = async () => {
           </ul>
         </div>
       </div>
-     
+      <div className="mt-8 text-center">
+        <p>&copy; 2024 BlogApp. All rights reserved.</p>
+      </div>
     </footer>
   )
 }
