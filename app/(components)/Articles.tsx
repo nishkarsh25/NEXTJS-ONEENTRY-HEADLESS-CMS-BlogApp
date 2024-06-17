@@ -13,7 +13,12 @@ const Articles = async () => {
 
   return (
     <div className='flex flex-col gap-4 mx-auto max-w-6xl my-10'> 
-        
+        <span className='font-bold underline my-5'>Recent Articles</span>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
+            {
+               blogs && blogs.map((blog:any)=> <Link key={blog.id} href={`/blog/${blog.id}`}><Article blog={blog}/></Link>)
+            }
+        </div>
     </div>
   )
 }
