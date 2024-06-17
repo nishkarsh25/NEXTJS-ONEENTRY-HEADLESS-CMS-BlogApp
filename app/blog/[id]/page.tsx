@@ -33,3 +33,4 @@ const SingleArticle = async ({params}:any) => {
     )
 }
 
+export default SingleArticle
