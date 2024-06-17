@@ -7,7 +7,7 @@ const { Pages } = defineOneEntry(process.env.API_URL!, {token:process.env.API_TO
 
 const Navbar = async() => {
 
-    
+    const pages = await Pages.getPages('en_US')
     
 
   
