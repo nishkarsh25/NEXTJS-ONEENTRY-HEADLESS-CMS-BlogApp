@@ -25,23 +25,44 @@ You can try out the live demo of the app [here](https://nextjs-shadcndarkmode.on
 
 ```
 .
-├── components
-│   ├── ToggleMode.tsx
-│   ├── Nav.tsx
-│   └── ThemeProvider.tsx
 ├── app
-│   ├── page.tsx
+│   ├── api
+│   │   └── contactus
+│   │       └── route.ts
+│   ├── (components)
+│   │   ├── Articles.tsx
+│   │   ├── Article.tsx
+│   │   ├── ContactButton.tsx
+│   │   ├── Footer.tsx
+│   │   ├── FormDialog.tsx
+│   │   ├── HeroSection.tsx
+│   │   └── Navbar.tsx
+│   ├── (blog)
+│   │   ├── [id]
+│   │   │   └── page.tsx
+│   ├── globals.css
 │   ├── layout.tsx
-│   └── ...
+│   ├── page.tsx
+│   └── (home)
+│       └── page.tsx
 ├── public
-│   ├── ...
+│   ├── favicon.ico
+│   └── images
+│       └── some-image.png
+├── components
+│   └── ui
+│       ├── button.tsx
+│       ├── dialog.tsx
+│       ├── input.tsx
+│       └── label.tsx
 ├── styles
-│   ├── ...
-├── .gitignore
-├── README.md
+│   └── globals.css
+├── .env.local
+├── next.config.js
 ├── package.json
 ├── tsconfig.json
-└── ...
+└── README.md
+
 
 ```
 
