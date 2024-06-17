@@ -9,7 +9,12 @@ const Home = async() => {
 
   const pages = await Pages.getPages("en_US");
  
-  
+  return (
+     <div>
+       <HeroSection pages={pages}/>
+       <Articles/>
+     </div>
+  );
 }
 
 
