@@ -10,6 +10,13 @@ const ContactButton = () => {
     const openHandler = () => {
         setOpen(true);
     }
-    
+    return (
+        <>
+        <div className='md:mx-0 mx-2'>
+            <Button onClick={openHandler} className='rounded-sm'>CONTACT US</Button>
+        </div>
+        <FormDialog open={open} setOpen={setOpen}/>
+        </>
+    )
 }
 
