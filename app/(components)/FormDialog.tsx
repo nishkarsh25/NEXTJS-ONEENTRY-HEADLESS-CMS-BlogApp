@@ -39,6 +39,7 @@ export function FormDialog({ open, setOpen }: { open: boolean, setOpen: any }) {
         setOpen(false);
     }
 
+    
     return (
         <Dialog open={open}>
             <DialogContent className="sm:max-w-[425px]" onInteractOutside={() => setOpen(false)}>
