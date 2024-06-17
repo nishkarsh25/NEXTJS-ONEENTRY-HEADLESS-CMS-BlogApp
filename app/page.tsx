@@ -4,6 +4,12 @@ import Articles from './(components)/Articles'
 import { defineOneEntry } from 'oneentry';
 
 
+const Home = async() => {
+  
 
+  
+ 
+  
+}
 
 
