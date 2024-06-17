@@ -22,3 +22,4 @@ const HeroSection = ({pages}:{pages:any}) => {
   )
 }
 
+export default HeroSection
